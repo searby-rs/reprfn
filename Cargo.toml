@@ -1,0 +1,20 @@
+[package]
+name = "reprfn"
+description = "attribute macro for easyer define external functions"
+version = "1.0.0"
+edition = "2021"
+authors = ["searby-rs <searbyrs@outlook.com>"]
+homepage = "https://github.com/searby-rs/reprfn"
+repository = "https://github.com/searby-rs/reprfn"
+keywords = ["searby", "ffi", "procedural"]
+license = "Apache-2.0"
+
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.89"
+quote = "1.0.37"
+syn = { version = "2.0.85", features = ["full", "visit", "visit-mut", "extra-traits"] }
